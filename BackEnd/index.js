@@ -10,10 +10,7 @@ const casesRoute = require("./routes/Cases.js");
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests from the frontend
-  credentials: true, // Allow cookies if needed
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/register",registerRoute);
