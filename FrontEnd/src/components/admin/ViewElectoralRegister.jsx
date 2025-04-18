@@ -26,7 +26,7 @@ const toHome=()=>{
   
            var token = sessionStorage.getItem('token'); 
           try {
-              const response = await fetch('http://127.0.0.1:3000/api/electoralregister/userdata', {
+              const response = await fetch('${backendUrl}api/electoralregister/userdata', {
                   method : 'POST',
                 headers: {
                   'Content-Type': 'application/json',

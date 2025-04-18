@@ -48,7 +48,7 @@ const AddCourt=()=>{
         var updatedformdata=adjustFormData(formData)
     
         try {
-          const response = await fetch('http://127.0.0.1:3000/api/courts/addcourt', { 
+          const response = await fetch('${backendUrl}api/courts/addcourt', { 
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

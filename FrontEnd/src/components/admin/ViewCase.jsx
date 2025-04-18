@@ -23,7 +23,7 @@ const ViewCase = () => {
     const fetchCaseData = async () => {
       try {
         var token = sessionStorage.getItem('token'); 
-        const response = await fetch(`http://127.0.0.1:3000/api/cases/getcase`, {
+        const response = await fetch(`${backendUrl}api/cases/getcase`, {
             method : 'POST',
             headers: {
                 'Content-Type': 'application/json',

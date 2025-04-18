@@ -29,7 +29,7 @@ const AddCase = () => {
   useEffect(() => {
     const fetchCourts = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3000/api/courts/courtdata', {
+        const response = await fetch('${backendUrl}api/courts/courtdata', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const AddCase = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:3000/api/cases/addcase', {
+      const response = await fetch('${backendUrl}api/cases/addcase', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

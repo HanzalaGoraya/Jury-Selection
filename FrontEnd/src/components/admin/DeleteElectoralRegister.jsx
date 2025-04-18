@@ -12,7 +12,7 @@ const DeleteElectoralRegister = () => {
     setError(null);
     try {
       const token = sessionStorage.getItem('token');
-      const response = await fetch('http://127.0.0.1:3000/api/electoralregister/deleteelectoralregister', {
+      const response = await fetch('${backendUrl}api/electoralregister/deleteelectoralregister', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

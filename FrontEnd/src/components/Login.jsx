@@ -15,7 +15,7 @@ const Login=()=>{
       e.preventDefault();
   
       try {
-        const response = await fetch('https://automatic-space-zebra-9xgrq97q67wh757w-3000.app.github.dev/api/login/', {
+        const response = await fetch('${backendUrl}api/login/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

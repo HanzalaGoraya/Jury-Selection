@@ -44,7 +44,7 @@ const caseId = caseItem.CaseID;
   useEffect(() => {
     const fetchCaseDetails = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:3000/api/cases/getcase`, {
+        const response = await fetch(`${backendUrl}api/cases/getcase`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const caseId = caseItem.CaseID;
 
     const fetchCourts = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3000/api/courts/courtdata', {
+        const response = await fetch('${backendUrl}api/courts/courtdata', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const caseId = caseItem.CaseID;
 
     const fetchElectoralRegisters = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3000/api/register/users', {
+        const response = await fetch('${backendUrl}api/register/users', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -131,7 +131,7 @@ const caseId = caseItem.CaseID;
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://127.0.0.1:3000/api/cases/updatecase`, {
+      const response = await fetch(`${backendUrl}api/cases/updatecase`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

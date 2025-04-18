@@ -58,7 +58,7 @@ const UpdateElectoralRegister = () => {
     const fetchData = async () => {
       var token = sessionStorage.getItem('token');
       try {
-        const response = await fetch('http://127.0.0.1:3000/api/electoralregister/userdata', {
+        const response = await fetch('${backendUrl}api/electoralregister/userdata', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ const UpdateElectoralRegister = () => {
     setError(null);
     setSuccess(null);
     try {
-      const response = await fetch('http://127.0.0.1:3000/api/electoralregister/updateuser', {
+      const response = await fetch('${backendUrl}api/electoralregister/updateuser', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

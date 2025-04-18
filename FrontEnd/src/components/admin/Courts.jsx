@@ -20,7 +20,7 @@ const Courts=()=>{
   
            var token = sessionStorage.getItem('token'); 
           try {
-              const response = await fetch('http://127.0.0.1:3000/api/courts/courtdata', {
+              const response = await fetch('${backendUrl}api/courts/courtdata', {
                   method : 'GET',
                 headers: {
                   'Content-Type': 'application/json',

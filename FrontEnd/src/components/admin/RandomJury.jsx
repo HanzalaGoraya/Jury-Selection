@@ -26,7 +26,7 @@ const RandomJury = () => {
   useEffect(() => {
     const fetchCaseDetails = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:3000/api/electoralregister/selectrandomjury`, {
+        const response = await fetch(`${backendUrl}api/electoralregister/selectrandomjury`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const RandomJury = () => {
   useEffect(() => {
     const updateJury = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:3000/api/cases/updatecase`, {
+        const response = await fetch(`${backendUrl}api/cases/updatecase`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',

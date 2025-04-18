@@ -14,7 +14,7 @@ const Home=()=>{
     const fetchData = async () => {
          var token = sessionStorage.getItem('token'); 
         try {
-            const response = await fetch('http://127.0.0.1:3000/api/register/users', {
+            const response = await fetch('${backendUrl}api/register/users', {
                 method : 'GET',
               headers: {
                 'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ const DeleteCourt=()=>{
     const handleDelete = async () => {
       try {
         const token = sessionStorage.getItem('token');
-        const response = await fetch('http://127.0.0.1:3000/api/courts/deletecourt', {
+        const response = await fetch('${backendUrl}api/courts/deletecourt', {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${token}`,

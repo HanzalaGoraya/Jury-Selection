@@ -18,7 +18,7 @@ const CasesFilledOnUser = ()=>{
            var token = sessionStorage.getItem('token'); 
           
           try {
-              const response = await fetch('http://127.0.0.1:3000/api/cases/casesfilledonuser', {
+              const response = await fetch('${backendUrl}api/cases/casesfilledonuser', {
                   method : 'GET',
                 headers: {
                   'Content-Type': 'application/json',

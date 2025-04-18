@@ -20,7 +20,7 @@ import DeleteCourt from './components/admin/DeleteCourt';
 import UpdateElectoralRegister from './components/admin/UpdateElectoralRegister.jsx';
 import DeleteElectoralRegister from './components/admin/DeleteElectoralRegister.jsx';
 import ViewElectoralRegister from './components/admin/ViewElectoralRegister.jsx';
-
+const backendUrl = import.meta.env.VITE_API_BACKEND_URL;
 
 
 function App() {
